@@ -89,7 +89,7 @@ modern-bazaar/
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-org/modern-bazaar.git
+git clone https:https://github.com/Ahsanullah-786superior/modernbazaar-ecommerce-website-.git
 cd modern-bazaar
 
 # Install frontend deps
