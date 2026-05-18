@@ -6,7 +6,9 @@ Delivery support.
 ➢ Developed a complete Admin Panel with CRUD operations for products, categories, and order 
 management with status tracking. 
 ➢ Implemented JWT-based authentication with role-based access control (Admin/User) and protected 
-routes.  
+routes.
+
 ➢ Designed a responsive UI with dark/light mode, animated components using Framer Motion, and 
-mobile-first layout. 
+mobile-first layout.
+
 ➢  Built RESTful APIs with NestJS including validation pipes, guards, and Swagger documentation. 
