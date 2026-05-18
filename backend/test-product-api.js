@@ -1,0 +1,1 @@
+const http=require('http');const opts={hostname:'localhost',port:3001,path:'/api/products?limit=1',method:'GET',headers:{'Content-Type':'application/json'}};const req=http.request(opts,res=,res.statusCode);res.on('data',c=;});req.on('error',e=,e.message));req.end(); 

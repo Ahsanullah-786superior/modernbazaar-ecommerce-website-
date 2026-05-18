@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Cormorant Garamond';
+  --font-body: 'DM Sans';
+  --font-mono: 'DM Mono';
+
+  --background: 146 43% 96%;
+  --foreground: 221 15% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 221 15% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 221 15% 15%;
+  --primary: 154 82% 41%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 331 84% 80%;
+  --secondary-foreground: 335 55% 18%;
+  --muted: 152 34% 91%;
+  --muted-foreground: 153 48% 22%;
+  --accent: 334 86% 65%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 354 70% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 146 27% 85%;
+  --input: 149 23% 95%;
+  --ring: 154 82% 41%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 232 13% 10%;
+  --foreground: 210 20% 98%;
+  --card: 232 13% 14%;
+  --card-foreground: 210 20% 98%;
+  --popover: 232 13% 14%;
+  --popover-foreground: 210 20% 98%;
+  --primary: 154 82% 41%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 334 86% 65%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 230 20% 18%;
+  --muted-foreground: 210 20% 78%;
+  --accent: 334 86% 65%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 354 70% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 231 17% 18%;
+  --input: 231 17% 18%;
+  --ring: 154 82% 41%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+}
+
+button {
+  transition: background-color 0.2s ease, color 0.2s ease, font-weight 0.2s ease, border-radius 0.2s ease;
+}
+
+button:hover {
+  font-weight: 700;
+  border-radius: 9999px;
+  background-color: hsl(48 100% 64%);
+  color: #111;
+  box-shadow: 0 12px 28px rgba(249, 199, 65, 0.18);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  @apply bg-primary !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-primary !important;
+}
+
+/* Skeleton animation */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 25%,
+    hsl(var(--muted-foreground) / 0.1) 50%,
+    hsl(var(--muted)) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
