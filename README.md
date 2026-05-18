@@ -316,5 +316,6 @@ Click **Authorize** and paste your JWT token to test protected endpoints.
 ## 📄 License
 
 MIT — free for personal and commercial use.
-#   m o d e r n b a z a a r - e c o m m e r c e - w e b s i t e -  
+#   m o d e r n b a z a a r - e c o m m e r c e - w e b s i t e - 
+ 
  
